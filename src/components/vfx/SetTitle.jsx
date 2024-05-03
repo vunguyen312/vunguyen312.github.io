@@ -8,7 +8,7 @@ function SetTitle(){
     const [blink, setBlink] = useState("_");
 
     function BlinkUnderscore(){
-    
+        
         useEffect(() => {
             const interval = setInterval(() => {
             const newState = blink === "_" ? "" : "_";
