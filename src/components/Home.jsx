@@ -25,32 +25,54 @@ function SetTitle(){
         return(blink);
     }
 
-    const resetText = () => {
+    const typeName = (str) => {
 
         if(isAnimating) return;
 
-        let counter = newText.length;
+        let counter = 0;
 
         setIsAnimating(true);
         setBlink("|");
 
         const interval = setInterval(() => {
 
-            setText(newText.substring(0, counter));
+            setText(defaultText.substring(0, counter));
 
-            if(counter > 0) return counter--;
+            if(counter < defaultText.length) return counter++;
 
             clearInterval(interval);
-            setText(defaultText);
             setIsAnimating(false);
 
         }, 70);
     }
 
-    const mouseEnter = () => {
+    const resetText = (str) => {
+        
+        if(isAnimating) return;
 
+        let counter = str.length;
+
+        setIsAnimating(true);
+        setBlink("|");
+
+        const interval = setInterval(() => {
+
+            setText(str.substring(0, counter));
+
+            if(counter > 0) return counter--;
+
+            clearInterval(interval);
+            setIsAnimating(false);
+            if(str === newText) return typeName();
+            typeTitle();
+
+        }, 70);
+    }
+
+    const typeTitle = () => {
+        
         if(isAnimating || text === newText) return;
-
+        
         let counter = 1;
 
         setIsAnimating(true);
@@ -64,7 +86,7 @@ function SetTitle(){
 
             clearInterval(interval);
             setIsAnimating(false);
-            resetText()
+            setTimeout(() => resetText(newText), 3000);
 
         }, 50);
     }
@@ -73,7 +95,7 @@ function SetTitle(){
 
     return(
         <span style={{animationPlayState: animationPlayState}} className="json" 
-        onMouseEnter={mouseEnter}
+        onMouseEnter={() => resetText(defaultText)}
         >
             {text}<BlinkUnderscore />
         </span>
