@@ -8,9 +8,13 @@ function Home() {
     return(
         <section>
             <Container fluid className="home-section" id="home">
-                <h1 className="heading-name">
-                    <SetTitle />
-                </h1>
+                <Row>
+                    <Col md={12}>
+                        <h1 className="heading-name">
+                            <SetTitle />
+                        </h1>
+                    </Col>
+                </Row>
                 <Row>
                     <Col md={12} className="home-socials">
                         <ul className="home-about-social-links">

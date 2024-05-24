@@ -1,8 +1,30 @@
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b6b6b6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 234, 234, 0.91);
+    border-radius: 10px;
+}
+
+/* HOME */
+
 .heading-name {
     color: white !important;
-    font-size: 6vmax !important;
+    font-size: clamp(60px, 10vw, 120px) !important;
+    font-weight: 500px !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    text-align: center !important;
     margin-top: 45vh !important;
     margin-bottom: 15vh !important;
 }
@@ -10,10 +32,9 @@
 .home-social-icons {
     position: relative !important;
     display: inline-block !important;
-    width: 3vmax !important;
-    height: 3vmax !important;
-    text-align: center !important;
-    font-size: 1.4vmax !important;
+    width: 65px !important;
+    height: 65px !important;
+    font-size: 30px !important;
     line-height: 2em !important;
     background: rgba(255, 255, 255, 0.972) !important;
     color: black !important;
@@ -53,7 +74,7 @@
 
 .projects-heading {
     color: white !important;
-    font-size: 4vmax !important;
+    font-size: clamp(50px, 8vw, 80px) !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 200px;
     padding-bottom: 30px;
@@ -69,8 +90,8 @@
 .project-template {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
     height: auto !important;
 }
 
