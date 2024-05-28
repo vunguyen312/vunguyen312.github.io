@@ -10,7 +10,7 @@ function Projects() {
     return(
         <Container fluid className="projects-section">
             <h1 className="projects-heading">Current Projects</h1>
-                <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
+                <Row className="projects-row">
                     <Col md={4} className="project-template">
                         <ProjectTemplate
                             imgPath={phantasy}

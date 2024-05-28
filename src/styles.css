@@ -87,6 +87,11 @@
     background-image: var(--section-background-color) !important;
 }
 
+.projects-row {
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .project-template {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
