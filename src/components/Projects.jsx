@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, Container} from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import ProjectTemplate from "./ProjectTemplate";
 import phantasy from "../assets/phantasy.png";
 import website from "../assets/website.png";

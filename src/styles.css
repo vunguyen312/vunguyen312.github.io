@@ -127,4 +127,18 @@
     border-color: #000000 !important;
 }
 
+/* GENERAL VFX */
 
+.fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20vh);
+    transition: opacity 0.5s ease-out, transform 1.0s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

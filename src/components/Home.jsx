@@ -1,7 +1,7 @@
-import {Col, Row, Container} from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import Projects from "./Projects";
-import {AiFillGithub} from "react-icons/ai";
-import {FaLinkedinIn} from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import SetTitle from "./vfx/SetTitle";
 
 function Home() {
