@@ -29,6 +29,24 @@
     margin-bottom: 15vh !important;
 }
 
+.home-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-about-social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-about-social-links .social-icons {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
 .home-social-icons {
     position: relative !important;
     display: inline-block !important;
