@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
 
 function NavBar(){
     const [expand, updateExpanded] = useState(false);
@@ -14,11 +13,11 @@ function NavBar(){
             expand="md"
             className={navColour ? "sticky" : "navbar"}
         >
-            <Container>
-                <Link to="/">
-                    <p className="home-button">Home</p>
-                </Link>
-            </Container>
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/resume">Resume</Link>
+                <Link to="/projects">Projects</Link>
+            </nav>
         </Navbar>
     );
 }

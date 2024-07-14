@@ -2,7 +2,8 @@ import './App.css';
 import './styles.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import ProjectsPage from './components/ProjectsPage';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes> 
       </div>
     </Router>
