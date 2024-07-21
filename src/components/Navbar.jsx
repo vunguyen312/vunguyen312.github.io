@@ -9,14 +9,15 @@ function NavBar(){
     return(
         <Navbar
             expanded={expand}
-            fixed="top"
             expand="md"
-            className={navColour ? "sticky" : "navbar"}
         >
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/">Vu Nguyen</Link>
+                <div className="right-nav">
+                    <Link to="/">Home</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/resume">Resume</Link>
+                </div>
             </nav>
         </Navbar>
     );
