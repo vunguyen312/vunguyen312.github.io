@@ -1,6 +1,10 @@
+import Projects from "./Projects";
+
 function ProjectsPage(){
     return(
-        <h1>Hello</h1>
+        <div>
+            <Projects />
+        </div>
     );
 }
 

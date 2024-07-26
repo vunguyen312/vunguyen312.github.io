@@ -16,7 +16,7 @@ function Resume(){
                 <Row className="resume">
                     <Document 
                         file={resume}
-                        className="d-flex justify-content-center"
+                        className="resume-pdf"
                         onLoadError={(error) =>
                             alert(`ERROR: Document failed to load ${error.message}`)
                         }

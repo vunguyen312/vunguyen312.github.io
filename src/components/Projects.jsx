@@ -9,7 +9,6 @@ import westonci from "../assets/westonci.png";
 function Projects() {
     return(
         <Container fluid className="projects-section">
-            <h1 className="projects-heading">Current Projects</h1>
                 <Row className="projects-row">
                     <Col md={4} className="project-template">
                         <ProjectTemplate
