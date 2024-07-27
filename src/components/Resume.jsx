@@ -1,4 +1,5 @@
 import { Container, Row } from "react-bootstrap";
+import { useState, useEffect } from "react";
 import resume from "../assets/resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -10,6 +11,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function Resume(){
+    const [scale, setScale] = useState(0.04 * Math.sqrt(window.innerWidth));
+
+    useEffect(() => {
+        window.addEventListener("resize", () => setScale(0.04 * Math.sqrt(window.innerWidth)));
+        return () => 
+            window.removeEventListener("resize", () => setScale(0.04 * Math.sqrt(window.innerWidth)));
+    }, []);
+
     return(
         <div>
             <Container fluid className="resume-section">
@@ -21,7 +30,7 @@ function Resume(){
                             alert(`ERROR: Document failed to load ${error.message}`)
                         }
                     >
-                        <Page pageNumber={1} scale={1.7} />
+                        <Page pageNumber={1} scale={scale} />
                     </Document>
                 </Row>
             </Container>

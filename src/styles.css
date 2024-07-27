@@ -184,6 +184,14 @@ nav {
     border-color: #000000 !important;
 }
 
+.home-about-description {
+    color: white !important;
+    font-size: 20px !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
 /* GENERAL VFX */
 
 .fade-in {
