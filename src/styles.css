@@ -33,9 +33,15 @@ nav {
     margin-right: 50px;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px rgb(190, 190, 190);
     font-weight: 500;
     font-size: 30px;
     color: #ffffff;
+}
+
+.home-button:hover {
+    text-shadow: 0px 2px 1px rgb(190, 190, 190);
+    transition: ease 0.3s;
 }
 
 .right-nav {
@@ -57,14 +63,29 @@ nav {
 }
 
 .right-nav a:hover {
-    text-shadow: 0px 0px 1px rgb(170, 170, 170);
+    text-shadow: 2px 2px 2px rgb(190, 190, 190);
+    text-underline-offset: 10px;
+    transition: ease 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+    .home-button {
+        float: none;
+    }
+
+    .right-nav {
+        float: none;
+        padding-top: 10px;
+        margin-right: 0;
+    }
 }
 
 /* HOME */
 
 .heading-name {
     color: white !important;
-    font-size: clamp(60px, 10vw, 120px) !important;
+    font-size: clamp(50px, 10vw, 120px) !important;
+    text-shadow: 2px 2px 2px rgb(190, 190, 190);
     font-weight: 500px !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin-top: 35vh !important;
@@ -91,9 +112,9 @@ nav {
 .home-social-icons {
     position: relative !important;
     display: inline-block !important;
-    width: 65px !important;
-    height: 65px !important;
-    font-size: 30px !important;
+    width: clamp(30px, 10vw, 65px) !important;
+    height: clamp(30px, 10vw, 65px) !important;
+    font-size: clamp(10px, 4.5vw, 30px) !important;
     line-height: 2em !important;
     background: rgba(255, 255, 255, 0.972) !important;
     color: black !important;
@@ -213,6 +234,13 @@ nav {
 .resume-pdf {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
+}
+
+.download-button {
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
 }
