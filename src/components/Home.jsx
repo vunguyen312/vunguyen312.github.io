@@ -8,11 +8,9 @@ function Home() {
         <section>
             <Container fluid className="home-section" id="home">
                 <Row>
-                    <Col md={12}>
-                        <h1 className="heading-name">
-                            <SetTitle />
-                        </h1>
-                    </Col>
+                    <h1 className="heading-name">
+                        <SetTitle />
+                    </h1>
                 </Row>
                 <Row>
                     <Col md={12} className="home-socials">
