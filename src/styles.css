@@ -247,7 +247,17 @@ nav {
 
 /* ABOUT */
 
+.about-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
 .skill-carousel {
+    padding-top: 50px;
 }
 
 .skill-card-view {
@@ -268,4 +278,8 @@ nav {
 
 .rec.rec-dot {
     visibility: hidden;
+}
+
+.rec.rec-arrow {
+    padding: 0px;
 }
