@@ -67,7 +67,11 @@ function About() {
     return (
         <div>
             <Container fluid className="about-section">
-                <p className="about-body">My Skills</p>
+                <div className="about-body">
+                    <h1>
+                        My Skills
+                    </h1>
+                </div>
                 <Row>
                     <Carousel 
                         className="skill-carousel"

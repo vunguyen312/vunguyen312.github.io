@@ -206,11 +206,28 @@ nav {
 }
 
 .home-about-description {
-    color: white !important;
-    font-size: 20px !important;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    border-radius: 20px !important;
+    background-image: linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(238, 238, 238) 100%) !important;
+    box-shadow: 0 2px 5px 2px rgba(167, 167, 167, 0.46) !important;
+    margin-bottom: 4vw !important;
+    margin-top: clamp(250px, 20vw, 50px) !important;
+    margin: auto;
     padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    width: 90% !important;
+    padding-bottom: 200px !important;
+    background-color: #ffffff;
+}
+
+.white-space {
+    padding-top: 5px;
+}
+
+.home-about-title {
+    color:#424242 !important;
+    padding: .25rem !important;
+    margin-top: 50px !important;
+    margin-left: 10vw !important;
+    display: flex;
 }
 
 /* GENERAL VFX */
@@ -248,11 +265,13 @@ nav {
 /* ABOUT */
 
 .about-body {
+    box-shadow: 0 2px 5px 2px rgba(167, 167, 167, 0.46) !important;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
     background-color: #ffffff;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 100px !important;
+    margin: auto;
+    width: 90%;
     border-radius: 20px;
 }
 

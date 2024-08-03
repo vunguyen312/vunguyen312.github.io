@@ -38,6 +38,10 @@ function Home() {
                         </ul>
                     </Col>
                 </Row>
+                <div className="home-about-description">
+                    <h2 className="home-about-title">About Me</h2>
+                </div>
+                <div className="white-space"></div>
             </Container>
         </section>
     );
