@@ -213,9 +213,24 @@ nav {
     margin-top: clamp(250px, 20vw, 50px) !important;
     margin: auto;
     padding-top: 50px !important;
-    width: 90% !important;
-    padding-bottom: 200px !important;
+    width: 75% !important;
+    padding-bottom: 100px !important;
     background-color: #ffffff;
+}
+
+.home-about-body {
+    margin-top: 5px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    padding: .3rem !important;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-about-image {
+    margin-top: 50px;
+    margin-right: 10vw;
+    width: clamp(200px, 30vw, 250px);
 }
 
 .white-space {
@@ -228,6 +243,22 @@ nav {
     margin-top: 50px !important;
     margin-left: 10vw !important;
     display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .home-about-body {
+        margin-right: 10vw;
+        text-align: justify !important;
+    }
+    .home-about-title {
+        margin-top: 0px !important;
+        justify-content: center;
+        margin-left: 0px !important;
+    }
+    .home-about-image {
+        margin-right: 0px;
+    }
 }
 
 /* GENERAL VFX */
