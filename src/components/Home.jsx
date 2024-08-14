@@ -49,7 +49,8 @@ function Home() {
                                     Hi, my name is Vu Nguyen. I'm a software developer based in Toronto, Ontario. 
                                     <br />
                                     <br />
-                                    Currently, I'm in 12th grade and I'm looking to pursue a career in software development. I have experience with web development, game development, and software development dating back to when I was 7 years old. 
+                                    Currently, I'm in 12th grade and I'm looking to pursue a career in software development. 
+                                    I have experience with web development, game development, and software development dating back to when I was 7 years old. 
                                     <br />
                                     <br />
                                     Making software has always been my passion, and I'm here to share it with the world!

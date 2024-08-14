@@ -68,9 +68,16 @@ function About() {
         <div>
             <Container fluid className="about-section">
                 <div className="about-body">
-                    <h1>
-                        My Skills
-                    </h1>
+                    <div className="cli-buttons">
+                        <span class="dot exit" />
+                        <span class="dot minimize" />
+                        <span class="dot maximize" />
+                    </div>
+                    <div className="cli-body">
+                        <p className="cli-text">
+                            {'>'} Hi there! Here's some of my skills down below!
+                        </p>
+                    </div>
                 </div>
                 <Row>
                     <Carousel 

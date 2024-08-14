@@ -68,7 +68,7 @@ nav {
     transition: ease 0.2s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .home-button {
         float: none;
     }
@@ -297,13 +297,12 @@ nav {
 
 .about-body {
     box-shadow: 0 2px 5px 2px rgba(167, 167, 167, 0.46) !important;
-    padding-top: 50px;
-    padding-bottom: 200px;
     background-color: #ffffff;
     margin-top: 100px !important;
     margin: auto;
     width: 90%;
-    border-radius: 20px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .skill-carousel {
@@ -332,4 +331,64 @@ nav {
 
 .rec.rec-arrow {
     padding: 0px;
+}
+
+.cli-body {
+    display: flex;
+    justify-content: center;
+    height: 84%;
+}
+
+.cli-text {
+    display: flex;
+    text-align: top;
+    justify-content: left;
+    padding: .25rem;
+    color: rgb(25, 146, 25);
+    background-color: #000000;
+    border-radius: 5px;
+    width: 99%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cli-buttons {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 2px;
+}
+
+.dot {
+    height: 1vw;
+    width: 1vw;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    margin: .5vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.exit {
+    background-color: #FF605C;
+}
+
+.minimize {
+    background-color: #FFBD44;
+}
+
+.maximize {
+    background-color: #00CA4E;
+}
+
+@media screen and (max-width: 900px) {
+    .dot {
+        height: 10px !important;
+        width: 10px !important;
+    }
+    .cli-text {
+        width: 97% !important;
+    }
+    .cli-body {
+        height: 92% !important;
+    }
 }
