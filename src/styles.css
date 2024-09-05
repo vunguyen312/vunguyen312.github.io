@@ -52,8 +52,8 @@ nav {
 
 .right-nav a {
     padding: .25rem;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
@@ -150,14 +150,6 @@ nav {
     padding-left: 50px;
 }
 
-.projects-heading {
-    color: white !important;
-    font-size: clamp(50px, 8vw, 80px) !important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 200px;
-    padding-bottom: 30px;
-}
-
 .projects-section {
     position: relative !important;
     padding-top: 50px !important;
@@ -171,10 +163,10 @@ nav {
 }
 
 .project-template {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-top: 2vw !important;
+    padding-bottom: 2vw !important;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
     height: auto !important;
 }
 
@@ -210,7 +202,7 @@ nav {
     background-image: linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(238, 238, 238) 100%) !important;
     box-shadow: 0 2px 5px 2px rgba(167, 167, 167, 0.46) !important;
     margin-bottom: 4vw !important;
-    margin-top: clamp(250px, 20vw, 50px) !important;
+    margin-top: clamp(200px, 10vw, 50px) !important;
     margin: auto;
     padding-top: 50px !important;
     width: 75% !important;

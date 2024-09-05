@@ -31,7 +31,7 @@ function Projects() {
                             imgPath={westonci}
                             title="Weston CI Computer Science Club Website"
                             description="Founder/President of the CS Club."
-                            ghLink="https://github.com/Weston-CI-CS-Club"
+                            ghLink="https://github.com/WestonCI-CS/WestonCI-CS.github.io"
                         />
                     </Col>
                 </Row>
